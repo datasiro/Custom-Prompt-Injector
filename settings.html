@@ -1,0 +1,47 @@
+<div class="inline-drawer">
+    <div class="inline-drawer-toggle inline-drawer-header">
+        <b data-i18n="Custom Prompt Injector">Custom Prompt Injector</b>
+        <div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+    </div>
+    <div class="inline-drawer-content">
+        <div class="flex-container flexnowrap">
+            <label class="checkbox_label" for="prompt-injector-enabled">
+                <span data-i18n="Enable Prompt Injection">Enable Prompt Injection</span>
+                <input type="checkbox" id="prompt-injector-enabled" class="checkbox">
+            </label>
+        </div>
+        <hr>
+        <div>
+            <label for="prompt-injector-presets" data-i18n="Select Prompt Preset">Select Prompt Preset</label>
+            <div class="prompt-preset-container">
+                <select id="prompt-injector-presets" class="text_pole"></select>
+                <button id="prompt-injector-add" class="menu_button small-button" title="Add new prompt">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <button id="prompt-injector-edit" class="menu_button small-button" title="Edit selected prompt">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+                <button id="prompt-injector-delete" class="menu_button small-button" title="Delete selected prompt">
+                    <i class="fa-solid fa-minus"></i>
+                </button>
+            </div>
+        </div>
+        <div>
+            <label for="prompt-injector-content" data-i18n="Prompt Content">Prompt Content</label>
+            <textarea id="prompt-injector-content" class="text_pole textarea_compact" rows="5" placeholder="Select a preset to see its content, or add a new one."></textarea>
+        </div>
+        <hr>
+        <div class="flex-container flexnowrap">
+            <label for="prompt-injector-position" class="flex1" data-i18n="Position">Position</label>
+            <select id="prompt-injector-position" class="text_pole widthNatural margin0">
+                <option value="system" data-i18n="System Message">System Message</option>
+                <option value="user" data-i18n="User Message">User Message</option>
+                <option value="assistant" data-i18n="AI Message">AI Message</option>
+            </select>
+        </div>
+        <div class="flex-container flexnowrap">
+            <label for="prompt-injector-depth" class="flex1" data-i18n="Depth">Depth</label>
+            <input id="prompt-injector-depth" class="text_pole widthUnset" type="number" min="0" max="100" value="1" title="0 = at the very end. 1 = before the last message.">
+        </div>
+    </div>
+</div>

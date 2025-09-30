@@ -1,0 +1,16 @@
+.prompt-preset-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.prompt-preset-container select {
+    flex-grow: 1;
+}
+
+#prompt-injector-content {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}

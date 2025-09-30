@@ -1,0 +1,11 @@
+{
+    "display_name": "Custom Prompt Injector",
+    "author": "Your Name",
+    "version": "1.0.0",
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "html": "settings.html",
+    "auto_update": false
+}
